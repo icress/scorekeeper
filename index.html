@@ -1,27 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <title>Scorekeeper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1><span id="player1">0</span> to <span id="player2">0</span></h1>
 
-    <select id="finalScore">
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-    </select>
+    <div class="columns">
+        <div class="column is-half is-offset-one-quarter">
+            <div class="card">
+                <header class="card-header is-centered">
+                    <h1 class="title is-size-1"><span id="player1">0</span> to <span id="player2">0</span></h1>
+                </header>
 
-    <button id="add1">+1 Player 1</button>
-    <button id="reset">Reset</button>
-    <button id="add2">+1 Player 2</button>
+                <div class="card-content">
+                    <div class="content">
+                        <p class="subtitle">Use this scorekeeper to (you guessed it) keep score!</p>
+                        
+                        <label for="select" class="label is-large is-inline">Play until</label>
+                        <div class="select is-rounded">
+                            <select id="finalScore">
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <footer class="card-footer">
+                    <button id="add1" class="card-footer-item button is-primary">+1 Player 1</button>
+                    <button id="reset" class="card-footer-item button is-warning">Reset</button>
+                    <button id="add2" class="card-foter-item button is-danger">+1 Player 2</button>
+
+                </footer>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
 
     <script src="app.js"></script>
 </body>
+
 </html>

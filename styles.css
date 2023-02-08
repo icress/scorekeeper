@@ -1,3 +1,21 @@
 body {
     text-align: center;
+    background-color: azure;
+    height: 110vh;
+}
+
+.card-header {
+    display: block;
+}
+
+.card {
+    margin-top: 10%;
+}
+
+.card-content {
+    padding: 10%;
+}
+
+button {
+    width: 33%;
 }
